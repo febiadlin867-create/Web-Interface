@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6ff;
+}
+
+/* Navbar */
+
+.navbar {
+  background: #4f46e5;
+  color: white;
+  padding: 18px 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+/* Page */
+
+.page {
+  max-width: 800px;
+  margin: 70px auto;
+  padding: 40px;
+
+  background: white;
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 15px #ccc;
+}
+
+.page h1 {
+  color: #4f46e5;
+  font-size: 35px;
+}
+
+.page h2 {
+  color: #555;
+}
+
+.page p {
+  line-height: 1.7;
+  color: #666;
+}
+
+/* Button */
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+
+  background: #4f46e5;
+  color: white;
+
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background: #3730a3;
+}
+
+/* About */
+
+.info {
+  margin-top: 25px;
+  background: #f1f2ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+/* Contact */
+
+.contact-box {
+  background: #f1f2ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+form button {
+  padding: 13px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background: #3730a3;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .navbar {
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .page {
+    margin: 30px 15px;
+    padding: 25px;
+  }
+
+  .page h1 {
+    font-size: 28px;
+  }
+}
